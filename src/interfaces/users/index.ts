@@ -25,3 +25,8 @@ export interface IUserUpdate {
     email?: string
     password?: string
 }
+
+export interface IUserUpdateResponse {
+    name?: string
+    email?: string
+}
