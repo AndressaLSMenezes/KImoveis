@@ -15,7 +15,7 @@ const createPropertiesService = async (data: Property): Promise<Property> => {
 
   const propertiesRepository = AppDataSource.getRepository(Property);
   const propertyExists = await propertiesRepository.findOneBy({
-    value: value,
+    address: address,
   });
 
   if (propertyExists) {

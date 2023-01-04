@@ -27,7 +27,6 @@ const listAllScheduleByPropertiesIdService = async (
   // .leftJoinAndSelect("properties.schedules", "schedules_users_properties")
   // .where("properties.id = :id", { id: foundProperties?.id })
   // .getOne();
-  console.log(foundSchedules);
 
   return foundSchedules;
 };
