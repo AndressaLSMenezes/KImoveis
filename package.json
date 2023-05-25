@@ -1,8 +1,7 @@
 {
-  "name": "sprint5",
+  "name": "kimoveis",
   "version": "1.0.0",
   "main": "index.ts",
-  "author": "Felipe <felipe.silva@kenzie.com.br>",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",

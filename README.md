@@ -1,90 +1,41 @@
-# S5-19 | 🏁 Entrega: KImóveis - TypeORM com Relacionamentos
+# KImoveis
 
-Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
+## 📚 Idealização
 
-````
-yarn install
-````
-<br>
+- A aplicação KImoveis foi criada com o propósito de facilitar a gestão de imobiliárias.
 
-**Configure as variáveis de ambiente no seu .env**, passando as credenciais corretas para conectar em seu banco local
+## 💻 Tecnologias
 
+- Node Js
+- PostgreSQL
+- Typescript
+- TypeORM
 
-Com isso feito, para rodar sua aplicação, basta utilizar o comando
-````
-yarn dev
-````
+## 🛠️ Dependencias
 
-<br>
+- "bcryptjs": biblioteca para criptografia de senhas em JavaScript.
+- "cross-env": define variáveis de ambiente de forma consistente em diferentes sistemas operacionais.
+- "dotenv": carrega variáveis de ambiente de um arquivo ".env" no Node.js.
+- "express": framework para aplicativos da web Node.js que fornece recursos para construir APIs e aplicativos da web.
+- "jsonwebtoken": cria e verifica tokens de autenticação JWT.
+- "pg": cliente de banco de dados PostgreSQL para Node.js.
+- "reflect-metadata": biblioteca para refletir informações de metadados em tempo de execução do TypeScript.
+- "ts-node-dev": reinicia automaticamente o servidor Node.js ao detectar alterações em arquivos do tipo TypeScript.
+- "yup": biblioteca de validação de esquema para JavaScript.
+- "express-async-errors": Biblioteca que permite lidar de forma assíncrona com erros em aplicações Express, simplificando o tratamento de exceções.
+- "typeorm": Biblioteca de mapeamento objeto-relacional (ORM) para Node.js e TypeScript, que facilita a interação e manipulação de bancos de dados relacionais através de uma abordagem orientada a objetos.
 
-# **Sobre os testes**
+## Como rodar o projeto?
 
-Essa aplicação possui testes, que serão utilizados para validar, se todas as regras de negócio foram aplicadas de maneira correta.
+Ao clonar o projeto, você seguirá os passos abaixo:
 
-Os testes estão localizados em `src/__tests__`.
+1. Execute o comando `yarn install` para instalar as dependências do servidor.
+2. Após a instalação, preencha as variáveis .env e execute o comando `yarn typeorm migration:run -d src/data-source.ts` para executar as migrações do banco de dados (PostgreSQL).
+3. Execute o comando `yarn dev` para iniciar o servidor. Certifique-se de que o servidor está rodando. (Necessário deixar o terminal aberto rodando o servidor).
+4. Importe o arquivo `kimoveis-insomnia.json` através do aplicativo Insomnia para descubrir as rotas existentes.
 
-Na subpasta `integration` estão os testes.
+OBS: Certifique-se de manter o servidor rodando em uma instância do terminal e o cliente rodando em outra. Para interromper a execução, pressione "CTRL+C" no terminal correspondente.
 
-Já na subpasta `mocks` estão os dados que serão utilizados para os testes.
+## 🔮 Updates Futuros
 
-No arquivo `jest.config.json` estão algumas configurações necessárias para os testes rodarem.
-
-**`De modo algum altere qualquer um desses arquivos.`** Isso poderá comprometer a integridade dos testes.
-
-E também não altere o script de `test` localizado no `package.json`. Isso será utilizado para rodar os testes.
-
-<br>
-
-
-# **Rodando os testes** 
-
-Para rodar os testes é necessário que no seu terminal, você esteja dentro do diretório do projeto.
-
-Estando no terminal e dentro do caminho correto, você poderá utilizar os comandos a seguir:
-
-### Rodar todos os testes
-````
-yarn test
-````
-#
-### Rodar todos os testes e ter um log ainda mais completo
-````
-yarn test --all
-````
-#
-
-### Rodar os testes de uma pasta específica
-`detalhe: repare que tests está envolvido por 2 underlines. Isso se chama dunder.`
-````
-yarn test ./scr/__tests__/integration/<subpasta>
-````
-#
-### Rodar os testes de um arquivo específico
-````
-yarn test ./scr/__tests__/integration/<subpasta>/<arquivo>
-````
-#
-### Rodar um teste específico
-````
-yarn test -t <describe ou test específico envolto em aspas>
-````
-````
-\\ ex: yarn test -t "/categories"
-\\ rodaria os testes do describe "/categorias" no caminho
-\\ ./scr/__tests__/integration/categories/categoriesRoutes.test.ts
-````
-
-<br>
-
-
-**Caso você queira verificar todas as opções de execução de testes, visite a [Documentação oficial do Jest](https://jestjs.io/docs/cli)**
-
-Após rodar um dos comandos aparecerá um log no seu terminal, contendo as informações da execução do teste.
-
-**Observação:** O teste pode demorar alguns segundos para ser finalizado. Quanto maior for o teste, mais tempo será consumido para a execução.
-
-#
-
-
-
-### Agora que já sabe como iniciar o seu projeto e rodar os testes, é hora de colocar a mão no código!
+- Adicionar uma documentação.
