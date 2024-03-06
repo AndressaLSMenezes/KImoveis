@@ -1,8 +1,8 @@
-# KImoveis
+# ImmoEase
 
 ## 📚 Idealização
 
-- A aplicação KImoveis foi criada com o propósito de facilitar a gestão de imobiliárias.
+- A aplicação ImmoEase foi criada com o propósito de facilitar a gestão de imobiliárias.
 
 ## 💻 Tecnologias
 
@@ -32,7 +32,7 @@ Ao clonar o projeto, você seguirá os passos abaixo:
 1. Execute o comando `yarn install` para instalar as dependências do servidor.
 2. Após a instalação, preencha as variáveis .env e execute o comando `yarn typeorm migration:run -d src/data-source.ts` para executar as migrações do banco de dados (PostgreSQL).
 3. Execute o comando `yarn dev` para iniciar o servidor. Certifique-se de que o servidor está rodando. (Necessário deixar o terminal aberto rodando o servidor).
-4. Importe o arquivo `kimoveis-insomnia.json` através do aplicativo Insomnia para descubrir as rotas existentes.
+4. Importe o arquivo `ImmoEase-insomnia.json` através do aplicativo Insomnia para descubrir as rotas existentes.
 
 OBS: Certifique-se de manter o servidor rodando em uma instância do terminal e o cliente rodando em outra. Para interromper a execução, pressione "CTRL+C" no terminal correspondente.
 
